@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>
       Город Седона
     </title>
@@ -57,10 +58,12 @@
       </nav>
     </header>
     <main class="main-index">
-      <h1 class="visually-hidden">
-        Основная информация о городе Седона
-      </h1>
-      <img class="hero-img" width="458" height="352" src="images/main-page/hero-text.svg" alt="Добро пожаловать в город Седона.">
+      <div class="hero">
+        <h1 class="visually-hidden">
+          Основная информация о городе Седона
+        </h1>
+        <img class="hero-img" width="458" height="352" src="images/main-page/hero-text.svg" alt="Добро пожаловать в город Седона.">
+      </div>
 
       <section class="main-description">
         <h2 class="visually-hidden">
@@ -79,7 +82,7 @@
           Преимущества
         </h2>
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item-with-picture">
             <h3 class="advantages-name">
               Настоящий Городок
             </h3>
@@ -112,7 +115,7 @@
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item-with-picture">
             <img class="advantages-img" width="800" height="384" src="images/main-page/devils-bridge.jpg" alt="Достопримечательность мост дьявола.">
             <h3 class="advantages-name">
               Там есть мост дьявола

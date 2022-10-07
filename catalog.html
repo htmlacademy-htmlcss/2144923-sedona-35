@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>
       Каталог гостиниц
     </title>
@@ -75,13 +76,11 @@
             </a>
           </li>
         </ul>
-      </header>
 
-      <section class="catalog-hotels">
-        <h2 class="visually-hidden">
-          Список гостиниц с фильтрами
-        </h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <h2 class="visually-hidden">
+            Фильтры
+          </h2>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">
               Инфраструктура:
@@ -120,7 +119,7 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" class="control-input" name="housing-type" value="hotel" checked>
+                  <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
                   <span>
                     Гостиница
                   </span>
@@ -157,6 +156,12 @@
             Сбросить
           </button>
         </form>
+      </header>
+
+      <section class="catalog-hotels">
+        <h2 class="visually-hidden">
+          Список гостиниц
+        </h2>
 
         <span class="number-hotels-found">
           Найдено гостиниц:
@@ -235,8 +240,8 @@
             <a class="button-more" href="#">
               Подробнее
             </a>
-            <button class="button-favorites">
-              В избранное
+            <button class="button-favorites button-favorites-active">
+              В избранном
             </button>
             <div class="rating-item">
               <p class="rating-stars-wrapper rating-stars-four">
@@ -312,7 +317,7 @@
         </ul>
 
         <ul class="pagination">
-          <li class="pagination-item selected">
+          <li class="pagination-item pagination-item-active">
             <a class="pagination-link" href="#">
               1
             </a>
@@ -332,8 +337,8 @@
               4
             </a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-more" href="#">
+          <li class="pagination-item pagination-more">
+            <a class="pagination-link" href="#">
               ...
             </a>
           </li>
@@ -346,10 +351,10 @@
       </section>
 
       <section class="subscribe-catalog">
-        <h2 class="subscribe-catalog-head">
+        <h2 class="subscribe-head">
           Подпишитесь на рассылку
         </h2>
-        <p class="subscribe-catalog-description">
+        <p class="subscribe-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
