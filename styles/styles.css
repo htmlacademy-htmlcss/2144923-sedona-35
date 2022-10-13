@@ -732,6 +732,8 @@ body {
 }
 
 .button-favorites {
+  max-width: 140px;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -745,6 +747,7 @@ body {
 
 .button-favorites-active {
   background: #7db54f;
+  padding: 8px 18px;
 }
 
 .rating-item-wrapper {
