@@ -268,13 +268,13 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 96px 0 20px 0;
+  margin: 76px 0 20px 0;
 }
 
 .subscribe-description {
   font-size: 22px;
   line-height: 26px;
-  margin: 0 0 54px 0;
+  margin: 0 0 24px 0;
 }
 
 .subscribe-submit {
@@ -309,27 +309,25 @@ body {
 }
 
 .main-description {
-  display: flex;
   width: 1200px;
-  min-height: 282px;
-  flex-direction: column;
-  align-items: center;
+  padding: 20px 0 65px 0;
+  text-align: center;
 }
 
 .main-description-title {
   width: 620px;
-  text-align: center;
+  display: inline-block;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 69px 0 25px 0;
+  margin: 49px 0 25px 0;
 }
 
 .main-description-text {
   font-size: 22px;
   line-height: 26px;
-  margin: 0 0 90px 0;
+  margin: 0 0 25px 0;
 }
 
 .advantages {
@@ -443,54 +441,53 @@ body {
 }
 
 .search-offers {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   width: 1200px;
+  padding: 20px 0 70px 0;
 }
 
 .search-offers-head {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 96px 0 20px 0;
+  margin: 76px 0 20px 0;
 }
 
 .search-offers-description {
   font-size: 22px;
   line-height: 26px;
-  margin: 0 0 54px 0;
+  margin: 0 0 34px 0;
 }
 
 .search-offers-link {
+  display: inline-block;
+  width: 376px;
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
-  margin-bottom: 96px;
+  margin-bottom: 26px;
+  margin-top: 20px;
 }
 
 .subscribe {
   background: #f2f2f2 url("../images/main-page/subscribe-background.jpg") no-repeat;
   background-size: 1200px;
-  width: 1200px;
-  min-height: 415px;
+  width: 1160px;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .subscribe-description {
   width: 480px;
-  text-align: center;
+  display: inline-block;
 }
 
 .subscribe-form {
   display: flex;
+  width: 684px;
   border-radius: 4px;
-  margin-bottom: 104px;
+  margin: 30px auto 84px auto;
 }
 
 .subscribe-email-input {
@@ -694,8 +691,8 @@ body {
 }
 
 .catalog-hotels-header {
-  margin-top: 50px;
-  margin-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
   display: flex;
 }
 
@@ -871,6 +868,7 @@ body {
   padding-bottom: 12px;
   text-align: center;
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .pagination-item-active {
@@ -896,27 +894,24 @@ body {
 }
 
 .subscribe-catalog {
-  width: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 1160px;
+  text-align: center;
+  padding: 20px;
 }
 
 .subscribe-catalog-head {
-  font-size: 30px;
   font-weight: 700;
+  font-size: 30px;
   line-height: 36px;
-  margin-top: 96px;
-  margin-bottom: 0;
   text-transform: uppercase;
+  margin: 76px 0 20px 0;
 }
 
 .subscribe-catalog-description {
+  display: inline-block;
   font-size: 22px;
   line-height: 26px;
-  margin-top: 20px;
-  margin-bottom: 54px;
-  text-align: center;
+  margin: 0 0 24px 0;
 }
 
 .subscribe-catalog-email-input {
