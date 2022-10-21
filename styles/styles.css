@@ -575,12 +575,13 @@ body {
 }
 
 .catalog-filter-results {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
   list-style-type: none;
   margin: 0;
-  padding: 0;
   border-bottom: 1px solid #E6E6E6;
+  padding: 0 0 40px 0;
 }
 
 .catalog-filter-results-item {
@@ -588,12 +589,7 @@ body {
   flex-direction: column;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  margin-bottom: 20px;
   padding: 20px;
-}
-
-.catalog-filter-results-item:nth-child(3n+2) {
-  margin: 0 17px 20px 17px;
 }
 
 .catalog-filter-list {
