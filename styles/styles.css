@@ -35,6 +35,9 @@ body {
 
 .shadow {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .main-container {
@@ -94,10 +97,6 @@ body {
   width: 550px;
 }
 
-.navigation-list-item {
-  padding: 20px 0;
-}
-
 .navigation-list-item:not(:first-child) {
   margin-left: 16px;
 }
@@ -130,13 +129,15 @@ body {
   color: inherit;
   font-weight: 700;
   text-decoration: none;
+  padding: 20px 0;
 }
 
 .navigation-link-current:after {
   content: "";
   position: absolute;
+  background-color: #756257;
   border: 1px solid #756257;
-  top: 43px;
+  top: 63px;
   left: 0;
   box-sizing: inherit;
   width: 100%;
@@ -309,8 +310,8 @@ body {
 }
 
 .main-description {
-  width: 1200px;
-  padding: 20px 0 65px 0;
+  width: 1160px;
+  padding: 69px 20px 65px;
   text-align: center;
 }
 
@@ -321,7 +322,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 49px 0 25px 0;
+  margin: 0 0 25px 0;
 }
 
 .main-description-text {
@@ -374,7 +375,9 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin: 102px auto 30px;
+  padding-top: 102px;
+  padding-bottom: 30px;
+  margin: 0 auto;
   text-transform: uppercase;
 }
 
@@ -442,21 +445,21 @@ body {
 
 .search-offers {
   text-align: center;
-  width: 1200px;
-  padding: 20px 0 70px 0;
+  width: 1160px;
+  padding: 96px 20px 70px;
 }
 
 .search-offers-head {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 76px 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 .search-offers-description {
   font-size: 22px;
   line-height: 26px;
-  margin: 0 0 34px 0;
+  margin: 0 0 54px 0;
 }
 
 .search-offers-link {
@@ -466,7 +469,6 @@ body {
   line-height: 36px;
   padding: 8px 50px;
   margin-bottom: 26px;
-  margin-top: 20px;
 }
 
 .subscribe {
@@ -480,14 +482,14 @@ body {
 
 .subscribe-description {
   width: 480px;
-  display: inline-block;
+  margin: 0 auto 54px;
 }
 
 .subscribe-form {
   display: flex;
   width: 684px;
   border-radius: 4px;
-  margin: 30px auto 84px auto;
+  margin: 0 auto 84px;
 }
 
 .subscribe-email-input {
@@ -512,7 +514,7 @@ body {
 
 .inner-header {
   background: #f2f2f2 url("../images/catalog-page/header-background.jpg") no-repeat;
-  background-size: 1200px 412px;
+  background-size: cover;
   width: 1200px;
   color: #ffffff;
   padding-top: 35px;
@@ -532,7 +534,8 @@ body {
 
 .catalog-filter {
   display: flex;
-  margin-left: 70px;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .catalog-filter-group-left {
@@ -540,6 +543,7 @@ body {
   padding: 0;
   margin-right: 70px;
   margin-left: 0;
+  width: 150px;
 }
 
 .catalog-filter-group-center {
@@ -547,12 +551,12 @@ body {
   padding: 0;
   margin-left: 70px;
   margin-right: 70px;
+  width: 288px;
 }
 
 .catalog-filter-input-price-left {
   width: 123px;
   height: 48px;
-  padding: 0 0 0 20px;
   border: none;
   font-weight: 700;
   border-radius: 4px 0 0 4px;
@@ -561,10 +565,14 @@ body {
 .catalog-filter-input-price-right {
   width: 123px;
   height: 48px;
-  padding: 0 0 0 20px;
   border: none;
   font-weight: 700;
   border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-input-price-range {
+  width: 258px;
+  margin: 34px 0 0 0;
 }
 
 .catalog-filter-buttons-container {
@@ -596,6 +604,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 150px;
 }
 
 .breadcrumbs {
@@ -841,8 +850,9 @@ body {
 .pagination {
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
   margin-top: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 52px;
   padding: 0;
 }
 
@@ -852,7 +862,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
-
+  padding: 15px;
 }
 
 .pagination-item {
@@ -860,11 +870,11 @@ body {
   border-radius: 4px;
   color: #ffffff;
   width: 60px;
-  padding-top: 12px;
-  padding-bottom: 12px;
   text-align: center;
   margin-right: 8px;
-  cursor: pointer;
+  margin-bottom: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .pagination-item-active {
@@ -892,7 +902,7 @@ body {
 .subscribe-catalog {
   width: 1160px;
   text-align: center;
-  padding: 20px;
+  padding: 76px 20px 20px 20px;
 }
 
 .subscribe-catalog-head {
@@ -900,14 +910,13 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 76px 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 .subscribe-catalog-description {
-  display: inline-block;
   font-size: 22px;
   line-height: 26px;
-  margin: 0 0 24px 0;
+  margin: 0 0 54px 0;
 }
 
 .subscribe-catalog-email-input {
