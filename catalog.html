@@ -95,7 +95,8 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="checkbox" class="control-input" name="pool" checked>
+                    <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
+                    <span class="control-mark"></span>
                     <span class="catalog-filter-filed-name">
                       Бассейн
                     </span>
@@ -103,7 +104,8 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="checkbox" class="control-input" name="parking" checked>
+                    <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
                     <span class="catalog-filter-filed-name">
                       Парковка
                     </span>
@@ -111,7 +113,8 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="checkbox" class="control-input" name="wifi">
+                    <input class="control-input visually-hidden" type="checkbox" name="wifi">
+                    <span class="control-mark"></span>
                     <span class="catalog-filter-filed-name">
                       Wi-Fi
                     </span>
@@ -126,7 +129,8 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
+                    <input class="control-input visually-hidden" type="radio" name="housing-type" value="hotel" checked>
+                    <span class="control-mark control-mark-circle"></span>
                     <span class="catalog-filter-filed-name">
                       Гостиница
                     </span>
@@ -134,7 +138,8 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="radio" class="control-input" name="housing-type" value="motel">
+                    <input class="control-input visually-hidden" type="radio" name="housing-type" value="motel">
+                    <span class="control-mark control-mark-circle"></span>
                     <span class="catalog-filter-filed-name">
                       Мотель
                     </span>
@@ -142,7 +147,8 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="radio" class="control-input" name="housing-type" value="apartments">
+                    <input class="control-input visually-hidden" type="radio" name="housing-type" value="apartments">
+                    <span class="control-mark control-mark-circle"></span>
                     <span class="catalog-filter-filed-name">
                       Апартаменты
                     </span>
@@ -154,9 +160,22 @@
               <legend class="catalog-filter-title">
                 Стоимость, ₽:
               </legend>
-              <input class="catalog-filter-input-price-left" type="text" value="0">
-              <input class="catalog-filter-input-price-right" type="text" value="9000">
-              <input class="catalog-filter-input-price-range" type="range" value="0">
+              <div class="range">
+                <div class="inputs-price-wrapper">
+                  <label for="input-price-left" class="visually-hidden">Поле ввода для фильтра стоимости "от"</label>
+                  <input id="input-price-left" class="catalog-filter-input-price-left" type="number" value="0">
+                  <label for="input-price-right" class="visually-hidden">Поле ввода для фильтра стоимости "до"</label>
+                  <input id="input-price-right" class="catalog-filter-input-price-right" type="number" value="9000">
+                </div>
+
+
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 226px">
+                    <button type="button" class="range-toggle toggle-min"></button>
+                    <button type="button" class="range-toggle toggle-max"></button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
 
             <div class="catalog-filter-buttons-container">
