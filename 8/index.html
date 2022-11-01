@@ -264,6 +264,57 @@
           </a>
         </section>
       </footer>
+
+      <div class="modal-container modal-close">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">
+              Поиск гостиницы в седоне
+            </h2>
+
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="field-group">
+                <label class="search-form-input-label" for="dateTo">
+                  Дата Заезда:
+                </label>
+                <input class="search-form-input-date" id="dateTo" type="text" placeholder="Дата заезда" name="dateFrom" value="27 апреля 2020">
+                <span class="search-form-date-hint warning">
+                  Мы не можем отправить вас в прошлое.
+                </span>
+              </div>
+              <div class="field-group">
+                <label class="search-form-input-label" for="dateFrom">
+                  Дата Выезда:
+                </label>
+                <input class="search-form-input-date" id="dateFrom" type="text" placeholder="Дата заезда" name="dateTo" value="1 сентября 2023">
+                <span class="search-form-date-hint">
+                  На эти даты есть свободные номера. Пока есть.
+                </span>
+              </div>
+              <div class="field-group controls-counts">
+                <label for="adults-count" class="search-form-input-label">Взрослые:</label>
+                <div class="count-controls-wrapper">
+                  <button class="count-minus"></button>
+                  <input id="adults-count" type="text" class="count-input" name="adults-count" value="2">
+                  <button class="count-plus"></button>
+                </div>
+
+                <label for="kids-count" class="search-form-input-label kids-label">Дети:</label>
+                <div class="count-controls-wrapper">
+                  <button class="count-minus"></button>
+                  <input id="kids-count" type="text" class="count-input" name="kids-count" value="2">
+                  <button class="count-plus"></button>
+                </div>
+              </div>
+
+              <button class="button search-form-submit" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
