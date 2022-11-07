@@ -75,7 +75,6 @@
                   </span>
                 </a>
               </li>
-              <li class="breadcrumbs-item arrow"></li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">
                   Гостиницы
@@ -162,17 +161,17 @@
               </legend>
               <div class="range">
                 <div class="inputs-price-wrapper">
-                  <label for="input-price-left" class="visually-hidden">Поле ввода для фильтра стоимости "от"</label>
-                  <input id="input-price-left" class="catalog-filter-input-price-left" type="number" value="0">
-                  <label for="input-price-right" class="visually-hidden">Поле ввода для фильтра стоимости "до"</label>
-                  <input id="input-price-right" class="catalog-filter-input-price-right" type="number" value="9000">
+                  <label class="price-from" for="input-price-left">от</label>
+                  <input class="catalog-filter-input-price-left" id="input-price-left" type="number" value="0">
+                  <label class="price-to" for="input-price-right">до</label>
+                  <input class="catalog-filter-input-price-right" id="input-price-right" type="number" value="9000">
                 </div>
 
 
                 <div class="range-scale">
                   <div class="range-bar" style="width: 226px">
-                    <button type="button" class="range-toggle toggle-min"></button>
-                    <button type="button" class="range-toggle toggle-max"></button>
+                    <button class="range-toggle toggle-min" type="button"></button>
+                    <button class="range-toggle toggle-max" type="button"></button>
                   </div>
                 </div>
               </div>

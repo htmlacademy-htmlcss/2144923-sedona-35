@@ -87,8 +87,8 @@
 
           <ul class="advantages-list">
             <li class="advantages-item-with-picture">
-              <div class="advantages-item-with-picture-description-container advantages-decorative-separator-white">
-                <h3 class="advantages-name">
+              <div class="advantages-item-with-picture-description-container">
+                <h3 class="advantages-name advantages-decorative-separator-white">
                   Настоящий Городок
                 </h3>
                 <p class="advantages-description">
@@ -97,16 +97,16 @@
               </div>
               <img class="advantages-img" width="800" height="384" src="images/main-page/real-town.jpg" alt="Вид на город изнутри.">
             </li>
-            <li class="advantages-item light-blue advantages-decorative-separator-black">
-              <h3 class="advantages-name">
+            <li class="advantages-item light-blue">
+              <h3 class="advantages-name advantages-decorative-separator-black">
                 Небольшая площадь
               </h3>
               <p class="advantages-description">
                 Все достопримечательности находятся очень близко
               </p>
             </li>
-            <li class="advantages-item blue advantages-decorative-separator-black">
-              <h3 class="advantages-name">
+            <li class="advantages-item blue">
+              <h3 class="advantages-name advantages-decorative-separator-black">
                 Красивая
                 <br>
                 дорога
@@ -115,8 +115,8 @@
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
-            <li class="advantages-item light-blue advantages-decorative-separator-black">
-              <h3 class="advantages-name">
+            <li class="advantages-item light-blue">
+              <h3 class="advantages-name advantages-decorative-separator-black">
                 Мало
                 <br>
                 туристов
@@ -127,8 +127,8 @@
             </li>
             <li class="advantages-item-with-picture">
               <img class="advantages-img" width="800" height="384" src="images/main-page/devils-bridge.jpg" alt="Достопримечательность мост дьявола.">
-              <div class="advantages-item-with-picture-description-container advantages-decorative-separator-white">
-                <h3 class="advantages-name">
+              <div class="advantages-item-with-picture-description-container">
+                <h3 class="advantages-name advantages-decorative-separator-white">
                   Там есть
                   <br>
                   мост дьявола
@@ -264,7 +264,7 @@
         </section>
       </footer>
 
-      <div class="modal-container modal-close">
+      <div class="modal-container">
         <div class="modal modal-search">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
@@ -275,7 +275,7 @@
             </h2>
 
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="field-group">
+              <fieldset class="field-group">
                 <label class="search-form-input-label" for="dateTo">
                   Дата Заезда:
                 </label>
@@ -283,8 +283,8 @@
                 <span class="search-form-date-hint warning">
                   Мы не можем отправить вас в прошлое.
                 </span>
-              </div>
-              <div class="field-group">
+              </fieldset>
+              <fieldset class="field-group">
                 <label class="search-form-input-label" for="dateFrom">
                   Дата Выезда:
                 </label>
@@ -292,22 +292,49 @@
                 <span class="search-form-date-hint">
                   На эти даты есть свободные номера. Пока есть.
                 </span>
-              </div>
-              <div class="field-group controls-counts">
+              </fieldset>
+              <fieldset class="field-group controls-counts">
                 <label for="adults-count" class="search-form-input-label">Взрослые:</label>
-                <div class="count-controls-wrapper">
-                  <button class="count-minus"></button>
+                <p class="count-controls-wrapper">
+                  <button class="count-minus">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z"/>
+                    </svg>
+                  </button>
                   <input id="adults-count" type="text" class="count-input" name="adults-count" value="2">
-                  <button class="count-plus"></button>
-                </div>
+                  <button class="count-plus">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                  </button>
+                </p>
 
                 <label for="kids-count" class="search-form-input-label kids-label">Дети:</label>
-                <div class="count-controls-wrapper">
-                  <button class="count-minus"></button>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+                <p class="count-controls-wrapper">
+                  <button class="count-minus">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z"/>
+                    </svg>
+                  </button>
                   <input id="kids-count" type="text" class="count-input" name="kids-count" value="2">
-                  <button class="count-plus"></button>
-                </div>
-              </div>
+                  <button class="count-plus">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                  </button>
+                </p>
+              </fieldset>
 
               <button class="button search-form-submit" type="submit">Найти</button>
             </form>
