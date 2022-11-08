@@ -810,7 +810,7 @@ body {
 
 .catalog-filter-results {
   display: grid;
-  grid-template-columns: 342px 342px 342px;
+  grid-template-columns: 340px 340px 340px;
   column-gap: 20px;
   row-gap: 18px;
   list-style-type: none;
