@@ -34,6 +34,11 @@ body {
   min-width: 1200px;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .shadow {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -125,6 +130,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0 0 0 auto;
+  max-width: 268px;
 }
 
 .navigation-user-item:last-child {
@@ -163,7 +169,7 @@ body {
   position: absolute;
   background-color: #756257;
   border: 1px solid #756257;
-  top: 63px;
+  bottom: 0;
   left: 0;
   box-sizing: inherit;
   width: 100%;
@@ -260,8 +266,7 @@ body {
 
 .page-footer-contacts {
   text-align: center;
-  margin-left: 237px;
-  margin-top: 5px;
+  margin: 5px 20px 0 237px;
 }
 
 .page-footer-logos {
@@ -336,6 +341,7 @@ body {
 
 .i-want-here {
   padding: 8px 34px;
+  max-width: 160px;
 }
 
 .i-want-here:not(:disabled):hover,
@@ -385,6 +391,7 @@ body {
 }
 
 .main-description {
+  width: 1160px;
   padding: 69px 20px 65px;
   text-align: center;
 }
@@ -1032,7 +1039,7 @@ body {
 }
 
 .catalog-hotels-display-mode-button:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 9px;
 }
 
 .catalog-hotels-display-mode-button:focus {
@@ -1220,6 +1227,7 @@ body {
 .pagination-item {
   margin-right: 8px;
   margin-bottom: 8px;
+  max-width: 60px;
 }
 
 .pagination-link-active {
@@ -1234,9 +1242,9 @@ body {
 }
 
 .subscribe-catalog {
-  width: 1160px;
+  width: 1120px;
   text-align: center;
-  padding: 97px 20px 20px 20px;
+  padding: 97px 40px 20px;
 }
 
 .subscribe-catalog-head {
@@ -1331,10 +1339,13 @@ body {
 .modal-close-button::after {
   content: "";
   display: block;
+  position: absolute;
   background-image: url("../images/main-page/close.svg");
   background-repeat: no-repeat;
   background-size: 14px 14px;
-  background-position: center center;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
   width: 14px;
   height: 14px;
 }
