@@ -266,7 +266,8 @@ img {
 
 .page-footer-contacts {
   text-align: center;
-  margin: 5px 20px 0 237px;
+  width: 331px;
+  margin: 5px 0 0 237px;
 }
 
 .page-footer-logos {
@@ -1227,7 +1228,7 @@ img {
 .pagination-item {
   margin-right: 8px;
   margin-bottom: 8px;
-  max-width: 60px;
+  max-width: 160px;
 }
 
 .pagination-link-active {
